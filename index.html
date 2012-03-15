@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Candy rocks WebRTC." />
+	<title>Candy rocks WebRTC</title>
+	<link rel="shortcut icon" href="public/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="public/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="public/syntax.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="public/application.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+			<div id="download">
+				<a href="http://github.com/candy-chat/candy/tarball/master" class="button">
+					Download candy.tar.gz
+					<small>v1.0.9 &mdash; <time datetime="2011-11-30">November 30th, 2011</time></small>
+				</a>
+				<span>Released under the <a href="http://github.com/candy-chat/candy/blob/master/LICENSE">MIT Licence</a></span>
+			</div>
+			<h1>Candy</h1>
+		 	<em>&mdash; rocks WebRTC</em>
+			<section>
+				There are plenty of web-based chat clients out there. None of them is able to do <mark>native video conferences</mark>.
+			</section>
+		</header>
+		<section id="short">
+			<h2>How to run the demo</h2>
+			<ul>
+				<li>
+					Make sure you run a <mark>browser capable of WebRTC</mark> (Currently <a href="http://tools.google.com/dlpage/chromesxs">Chrome Canary or Dev</a> is supported).
+				</li>
+				<li>
+					<a href="http://sites.google.com/site/webrtc/blog/webrtccannowbeenabledinchromeflags">Enable WebRTC</a> in Chrome Canary/Dev.
+				</li>
+				<li>
+					Open the demo
+				</li>
+			</ul>
+			<div id="demo">
+				<div id="showcase"></div>
+				<div class="demo">
+					<div id="demoarrow"></div>
+					<a id="demobutton" href="javascript:;">Try the Demo</a><br />
+					It's worth more than a thousand pictures!
+				</div>
+				<span class="demo-sponsor">
+					Demo powered by <a href="http://www.swissjabber.ch"><img src="public/images/swissjabber.png" alt="Swissjabber" /></a> &mdash; a service operated by <a href="http://nine.ch"><img src="public/images/nine_ch.png" alt="nine.ch" /></a>
+				</span>
+				<span class="demo-sponsor">
+					 Demo hosted on <a href="http://nodester.com">Nodester</a>
+				</span>
+				<h3>How it works</h3>
+				<ul>
+					<li>
+						New technology enable Browsers to access the <mark>Webcam and Microphone</mark> of the System 
+					</li>
+					<li>
+						WebRTC supports <mark>P2P Connection</mark> via a Javascript API
+					</li>
+					<li>
+						The <a href="https://github.com/candy-chat/candy-plugins/tree/jingle/jingle">Jingle Candy Plugin</a> uses the <a href="https://github.com/mweibel/strophejs-plugins/tree/jingle/jingle">Jingle Strophe.js Plugin</a> to establish the session.
+					</li>
+					<li>
+						Conversion of the <mark>SDP (Session Description Protocol)</mark> to <mark>Jingle</mark> is done using the <a href="http://github.com/mweibel/sdpToJingle">sdpToJingle Javascript Library</a>.
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="underthehood">
+			<h2>Under The Hood</h2>
+			<p>
+				Candy is built with JavaScript using long poll AJAX requests to emulate bidirectional-streams between client and server following the draft standard <a href="http://xmpp.org/extensions/xep-0124.html">XEP-0124</a> of the XMPP Standards Foundation. By using this standard there are no additional requirements on client-side but having a web browser installed.
+			</p>
+			<h3>Used Libraries</h3>
+			<ul>
+				<li>
+					<a href="http://github.com/mweibel/sdpToJingle">sdpToJingle</a> <small>a library for converting SDP Messages to Jingle equivalents</small>
+				<li>
+					<a href="http://strophe.im/strophejs/">Strophe.js</a> <small>a XMPP library for JavaScript</small>
+				</li>
+				<li>
+					<a href="http://jquery.org">jQuery</a> <small>The Write Less, Do More, JavaScript Library</small>
+				</li>
+				<li>
+					<a href="https://github.com/janl/mustache.js">mustache.js</a> <small>Logic-less templates with JavaScript</small>
+				</li>
+			</ul>
+			
+		</section>
+
+		<section id="about">
+			<h2>About Candy</h2>
+			<p>
+				Candy &mdash; abbreviation for <mark><i>Chats are not dead yet</i></mark> &mdash; was developed by <a href="http://github.com/mweibel">Michael Weibel</a> (<a href="https://twitter.com/#!/weibelm">@weibelm</a>) and <a href="http://koeniglich.ch">Patrick Stadler</a> (<a href="https://twitter.com/#!/pstadler">@pstadler</a>) on behalf of our employer <a href="http://www.amiadogroup.com">Amiado Group</a>.
+			</p>
+			<p>
+				This project was built as a replacement for the ancient chat software used by one of our large community websites. We love open source software. Therefore we decided to make Candy <mark>freely available for everyone</mark> and give something back to the community.
+			</p>
+		</section>
+	</article>
+
+	<a href="http://github.com/candy-chat/candy"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+
+</body>
+</html>
