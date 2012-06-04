@@ -14,7 +14,7 @@ $(document).ready(function() {
 		} else {
 			$('body article').stop().animate({'width': $('body').width() - 30});
 			$('html,body').stop().animate({'scrollTop': Math.floor(showcase.offset().top) + 1});
-			showcase.html('<iframe src="http://webrtc-meibel.rhcloud.com" scrolling="no" frameborder="0"></iframe>');
+			showcase.html('<iframe src="http://webrtc-mweibel.rhcloud.com" scrolling="no" frameborder="0"></iframe>');
 			showcase.addClass('demomode');
 			console.log($('#showcase iframe'));
 			$('#showcase iframe').css({'width': $('body').width() - 32 + 'px', 'height': showcase.height() - 2 + 'px'});
